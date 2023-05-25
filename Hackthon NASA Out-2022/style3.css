@@ -1,0 +1,251 @@
+/*PALETA: 
+Fundo: 0B173C
+Header: 1941A0
+Header ACTIVE: FFCF32*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    background-color: #0B173C;
+}
+
+header {
+    overflow: hidden;
+    background-color: #1941A0;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 40px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+header nav .tabs {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul.tabs :first-of-type a {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+header nav ul.tabs :last-of-type a {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header nav .tabs .tab {
+    display: block;
+}
+
+header nav .tabs .tab a[data-switcher] {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #1941A0;
+    cursor: pointer;
+}
+
+header nav .tabs .tab:hover a[data-switcher] {
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+header nav .tabs .tab.is-active a[data-switcher] {
+    background-color: #ffcf32;
+    font-weight: 700;
+}
+
+main {
+    padding-left: 142px;
+    padding-right: 142px;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.pages [data-page="1"] {
+    margin-top: 3%;
+    padding: 0;
+    border-radius: 10px;
+    background-color: #0B173C;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages [data-page="2"] {
+    margin-top: 3%;
+    padding: 50px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages [data-page="3"] {
+    margin-top: 3%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages [data-page="4"] {
+    margin-top: 3%;
+    padding: 50px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages [data-page="5"] {
+    margin-top: 3%;
+    padding: 50px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages .page {
+    display: none;
+    height: fit-content;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+.page .form-horizontal .form-group .control-label {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.page .form-horizontal .form-group .question {
+    padding: 10px;
+}
+
+.page .form-horizontal .form-group #submit {
+    padding: 10px;
+    margin-left: 42%;
+    margin-bottom: 10px;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+#show-modal-btn {
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    width: 30px;
+    height: 30px;
+    background-image: url(button.png);
+    background-color: rgb(0, 255, 0);
+    border-radius: 20px;
+    background-size: cover;
+    z-index: 2;
+}
+
+#close-modal-btn {
+    display: flex;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-image: url(close.png);
+    background-color: transparent;
+    border-radius: 20px;
+    background-size: cover;
+    z-index: 2;
+}
+
+#modal {
+    max-width: 900px;
+    height: 600px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #1941A0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.que {
+    font-size: 20px;
+}
+
+.game {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    font-size: 26px;
+    padding: 5px;
+}
+
+p {
+    text-align: left;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.game p:first-of-type {
+    text-align: left;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.game p:last-of-type {
+    text-align: left;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.page .img-fluid {
+    margin-right: 0px;
+}

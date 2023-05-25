@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <a href="home.html"><img src="logo.png" class="logo"></a>
+    <header>
+
+        <ul class="tabs">
+            <li class="tab">
+                <a href="home.html" data-switcher data-tab="1">Home</a>
+            </li>
+            <li class="tab">
+                <a href="historia.html" data-switcher data-tab="2">Parker's Story</a>
+            </li>
+            <li class="tab is-active">
+                <a href="map.html" data-switcher data-tab="3">Map</a>
+            </li>
+            <li class="tab">
+                <a href="game.html" data-switcher data-tab="4">Game</a>
+            </li>
+            <li class="tab">
+                <a href="quiz.html" data-switcher data-tab="5">Quiz</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="pages">
+            <div class="page is-active" data-page="3">
+                <img src="map.png" class="map">
+                <button type="button" id="show-modal-btn"></button>
+
+                <div id="overlay">
+                    <div id="modal">
+                        <button type="button" id="close-modal-btn"></button>
+                        <h1>Parker Solar Probe</h1>
+                        <p>Size: 3m high, 1m wide, 2.3m long<br>
+                            Top speed: 692k km/h<br><br>Has a carbon shield that can withstand 1400ºC<br><br>Weight:
+                            555kg<br><br>It's named after Eugene Parker</p>
+                        <img src="parker2.jpeg" class="ppp">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <a href="home.html"><img src="logo.png" class="logo"></a>
+    <header>
+
+        <ul class="tabs">
+            <li class="tab">
+                <a href="home.html" data-switcher data-tab="1">Home</a>
+            </li>
+            <li class="tab">
+                <a href="historia.html" data-switcher data-tab="2">Parker's Story</a>
+            </li>
+            <li class="tab">
+                <a href="map.html" data-switcher data-tab="3">Map</a>
+            </li>
+            <li class="tab">
+                <a href="game.html" data-switcher data-tab="4">Game</a>
+            </li>
+            <li class="tab is-active">
+                <a href="quiz.html" data-switcher data-tab="5">Quiz</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="pages">
+            <div class="page is-active" data-page="5">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                            <label id="label" class="col-md-4 control-label" for="Question"> Let's see if you read the
+                                story... Answer some questions to test you memory! </label>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q1.</b> What are solar winds?<br>
+                                            </div>
+                                            <input type="radio" name="question1"> Big solar eruptions<br>
+                                            <input type="radio" name="question1" id="correct1"> A great flux of
+                                            radiation parting from
+                                            the sun<br>
+                                            <input type="radio" name="question1"> Air gusts parting from the sun<br>
+                                            <input type="radio" name="question1"> Large masses of matter parting from
+                                            the
+                                            sun<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q2.</b> What was the highest speed acquired by the probe?<br>
+                                            </div>
+                                            <input type="radio" name="question2"> 489000 km/h<br>
+                                            <input type="radio" name="question2"> 287000 km/h<br>
+                                            <input type="radio" name="question2" id="correct2"> 692000 km/h<br>
+                                            <input type="radio" name="question2"> 831000 km/h<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q3.</b> How many trips near the sun is the probe expected to
+                                                make?<br>
+                                            </div>
+                                            <input type="radio" name="question3" id="correct3"> 24 trips<br>
+                                            <input type="radio" name="question3"> 20 trips<br>
+                                            <input type="radio" name="question3"> 8 trips<br>
+                                            <input type="radio" name="question3"> 16 trips<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q4.</b> How does Parker’s camera not melt when taking photos near the
+                                                sun?<br>
+                                            </div>
+                                            <input type="radio" name="question4"> The camera lens are
+                                            capable of looking directly at the sun<br>
+                                            <input type="radio" name="question4"> The camera does not capture photos
+                                            inside the Corona of the sun<br>
+                                            <input type="radio" name="question4"> There is a coating around the camera
+                                            that allows it to capture photos near the sun<br>
+                                            <input type="radio" name="question4" id="correct4"> The camera does not aim
+                                            directly at
+                                            the sun, making it capable of withstanding high temperatures<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q5.</b> What is the path that the probe takes in order to get nearer
+                                                to the
+                                                sun
+                                                with each trip?<br>
+                                            </div>
+                                            <input type="radio" name="question5"> The probe performs constant orbits
+                                            around only the sun, getting closer with each trip<br>
+                                            <input type="radio" name="question5"> The probe makes elliptical turns
+                                            around only the sun, having points where it approaches it<br>
+                                            <input type="radio" name="question5" id="correct5"> The probe makes long
+                                            elliptical turns
+                                            around the sun, passing also through the orbits of Mercury and Venus,
+                                            getting closer with each trip<br>
+                                            <input type="radio" name="question5"> The probe makes long elliptical turns
+                                            around the sun, passing also through the orbits of Mercury, Venus and
+                                            Jupiter; the latter giving it a great boost in speed due to its
+                                            gravitational force<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q6.</b> Why was the project name changed in honor of Dr. Eugene
+                                                Parker?<br>
+                                            </div>
+                                            <input type="radio" name="question6"> Because Eugene discovered the thermal
+                                            shield that could withstand 1400ºC<br>
+                                            <input type="radio" name="question6" id="correct6"> Because Eugene
+                                            discovered what is now
+                                            known as solar winds<br>
+                                            <input type="radio" name="question6"> Because Eugene was able to calculate
+                                            the route from Earth to the Sun in an elliptical way<br>
+                                            <input type="radio" name="question6"> Because Eugene made it possible to
+                                            capture photos in an interstellar environment<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q7.</b> The dimensions of the Parker Solar Probe most closely
+                                                resembles:<br>
+                                            </div>
+                                            <input type="radio" name="question7"> A motorcycle<br>
+                                            <input type="radio" name="question7"> A bus<br>
+                                            <input type="radio" name="question7"> An airplane<br>
+                                            <input type="radio" name="question7" id="correct7"> A car<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q8.</b> What can a big solar eruption do?<br>
+                                            </div>
+                                            <input type="radio" name="question8" id="correct8"> Disable satellite and
+                                            electronic
+                                            devices<br>
+                                            <input type="radio" name="question8"> Catastrophically increase the
+                                            temperature of the Earth<br>
+                                            <input type="radio" name="question8"> Increase the size of the Sun<br>
+                                            <input type="radio" name="question8"> Interfere with Earth’s
+                                            orbit<br>
+                                        </div>
+
+                                        <div class="question">
+                                            <div class="que">
+                                                <b>Q9.</b> What is the name of the outermost layer of the Sun’s
+                                                atmosphere that
+                                                the
+                                                probe entered in 2021?<br>
+                                            </div>
+                                            <input type="radio" name="question9"> Stratosphere<br>
+                                            <input type="radio" name="question9" id="correct9"> Corona<br>
+                                            <input type="radio" name="question9"> Asthenosphere<br>
+                                            <input type="radio" name="question9"> Ionosphere<br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input id="submit" type="reset" name="submit" value="Submit Quiz"
+                                    onClick="result(); reload()">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="index.js"></script>
+
+</html>
